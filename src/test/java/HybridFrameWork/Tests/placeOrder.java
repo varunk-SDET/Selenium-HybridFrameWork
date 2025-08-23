@@ -17,7 +17,7 @@ public class placeOrder extends baseTest {
 	payment objpayment;
 
 	@Test(dataProvider = "getData", groups = "Smoke")
-
+//pipeline test
 //	public void orderPlacement(String uname, String pass, String sizeOption, String productName, String colorOption,String shippingMethod) throws InterruptedException, IOException {
 	// TODO Auto-generated method stub
 	public void orderPlacement(HashMap<String, String> map) throws InterruptedException {

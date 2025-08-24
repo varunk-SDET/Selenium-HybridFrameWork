@@ -1,9 +1,9 @@
 HybridFramework\resources\ExtentReporterNG.class
-Pages\CartPage.class
-Pages\HomePage.class
-Pages\checkoutPage.class
 Pages\ProductDetailsPage.class
 Pages\ProductListPage.class
+Pages\CartPage.class
 Pages\LoginPage.class
+Pages\HomePage.class
 abstractComponents\AbstractComponents.class
+Pages\checkoutPage.class
 Pages\payment.class

@@ -129,8 +129,7 @@
 						<version>3.5.3</version>
 						<configuration>
 							<includes>
-								<include>
-									**/testCase_PlaceOrder</include>
+								<include>/Selenium/src/test/java/HyridFrameWork/TestRunner/testCase_PlaceOrder.java</include>
 							</includes>
 						</configuration>
 					</plugin>

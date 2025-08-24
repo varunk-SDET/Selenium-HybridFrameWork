@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 24 21:10:06 IST 2025</td>
+<td>Started on:</td><td>Sun Aug 24 21:13:54 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (7 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4342 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,70 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HyridFrameWork.TestRunner.testCase_PlaceOrder.runScenario()'><b>runScenario</b><br>Test class: HyridFrameWork.TestRunner.testCase_PlaceOrder<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of placing an order", "Place order"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Log in to the site using VK@mail.com and &quot;iQc#fRS377n8j_9&quot;&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Log in to the site using VK@mail.com and {string}&quot;)
+public void log_in_to_the_site_using_vk_mail_com_and(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add Atlas Fitness Tank M Blue to cart&quot;)
+public void i_add_atlas_fitness_tank_m_blue_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Navigate to checkout page and place order Fixed&quot;)
+public void navigate_to_checkout_page_and_place_order_fixed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;order placed message is displayed&quot;)
+public void order_placed_message_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ?.Log in to the site using VK@mail.com and &quot;iQc#fRS377n8j_9&quot;(file:///C:/Users/VARUN/BDD/Selenium/src/test/java/HybridFrameWork/cucumber/placeOrder.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace651433745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651433745'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Log in to the site using VK@mail.com and &quot;iQc#fRS377n8j_9&quot;&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Log in to the site using VK@mail.com and {string}&quot;)
+public void log_in_to_the_site_using_vk_mail_com_and(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add Atlas Fitness Tank M Blue to cart&quot;)
+public void i_add_atlas_fitness_tank_m_blue_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Navigate to checkout page and place order Fixed&quot;)
+public void navigate_to_checkout_page_and_place_order_fixed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;order placed message is displayed&quot;)
+public void order_placed_message_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ?.Log in to the site using VK@mail.com and &quot;iQc#fRS377n8j_9&quot;(file:///C:/Users/VARUN/BDD/Selenium/src/test/java/HybridFrameWork/cucumber/placeOrder.feature:10)
+</pre></div></td>
+<td>3</td>
+<td>HyridFrameWork.TestRunner.testCase_PlaceOrder@27ce24aa</td></tr>
+</table><p>
 </body>
 </html>

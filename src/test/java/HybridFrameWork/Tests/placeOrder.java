@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import HybridFrameWork.TestComponents.baseTest;
 import Pages.CartPage;
 import Pages.LoginPage;
@@ -48,12 +49,15 @@ public class placeOrder extends baseTest {
 		objpayment = objcheckoutPage.goToPayment();
 
 		objpayment.placeOrder();
+		String orderNum = objpayment.getOrderNumber();
+		System.out.println(orderNum);
 
 	}
 
 	@Test(dependsOnMethods = "orderPlacement")
 	public void getOrderNumber() {
-		objpayment.getOrderNumber();
+		String orderNum = objpayment.getOrderNumber();
+		System.out.println(orderNum);
 	}
 
 	

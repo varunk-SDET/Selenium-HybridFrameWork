@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 01 11:12:27 IST 2025</td>
+<td>Started on:</td><td>Sun Aug 24 21:05:39 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>166 seconds (166482 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (574 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,15 +76,71 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='HybridFrameWork.Tests.placeOrder.orderPlacement()'><b>orderPlacement</b><br>Test class: HybridFrameWork.Tests.placeOrder<br>Parameters: {uname=VK@mail.com, pass=iQc#fRS377n8j_9, sizeOption=M, shippingMethod=Fixed, colorOption=Blue, productName=Atlas Fitness Tank}</td>
-<td></td>
-<td>71</td>
-<td>HybridFrameWork.Tests.placeOrder@385c9627</td></tr>
-<tr>
-<td title='HybridFrameWork.Tests.placeOrder.orderPlacement()'><b>orderPlacement</b><br>Test class: HybridFrameWork.Tests.placeOrder<br>Parameters: {uname=VK@mail.com, pass=iQc#fRS377n8j_9, sizeOption=M, shippingMethod=Fixed, colorOption=Blue, productName=Atlas Fitness Tank}</td>
-<td></td>
-<td>66</td>
-<td>HybridFrameWork.Tests.placeOrder@385c9627</td></tr>
+<td title='HyridFrameWork.TestRunner.testCase_PlaceOrder.runScenario()'><b>runScenario</b><br>Test class: HyridFrameWork.TestRunner.testCase_PlaceOrder<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of placing an order", "Place order"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I have landed on ecommerce site&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I have landed on ecommerce site&quot;)
+public void i_have_landed_on_ecommerce_site() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;Log in to the site using VK@mail.com and {string}&quot;)
+public void log_in_to_the_site_using_vk_mail_com_and(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add Atlas Fitness Tank M Blue to cart&quot;)
+public void i_add_atlas_fitness_tank_m_blue_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Navigate to checkout page and place order Fixed&quot;)
+public void navigate_to_checkout_page_and_place_order_fixed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;order placed message is displayed&quot;)
+public void order_placed_message_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ?.I have landed on ecommerce site(file:///C:/Users/VARUN/BDD/Selenium/src/test/java/HybridFrameWork/cucumber/placeOrder.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace641664202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace641664202'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I have landed on ecommerce site&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I have landed on ecommerce site&quot;)
+public void i_have_landed_on_ecommerce_site() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;Log in to the site using VK@mail.com and {string}&quot;)
+public void log_in_to_the_site_using_vk_mail_com_and(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add Atlas Fitness Tank M Blue to cart&quot;)
+public void i_add_atlas_fitness_tank_m_blue_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Navigate to checkout page and place order Fixed&quot;)
+public void navigate_to_checkout_page_and_place_order_fixed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;order placed message is displayed&quot;)
+public void order_placed_message_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ?.I have landed on ecommerce site(file:///C:/Users/VARUN/BDD/Selenium/src/test/java/HybridFrameWork/cucumber/placeOrder.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>HyridFrameWork.TestRunner.testCase_PlaceOrder@609cd4d8</td></tr>
 </table><p>
 </body>
 </html>

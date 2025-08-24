@@ -12,7 +12,6 @@ public class payment extends AbstractComponents {
 	WebDriver driver;
 	WebElement product;
 
-
 	public payment(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
@@ -21,13 +20,15 @@ public class payment extends AbstractComponents {
 
 	@FindBy(xpath = "//span[text()='Place Order']")
 	WebElement placeOrder;
-	
+
 	@FindBy(xpath = "//*[@data-ui-id='page-title-wrapper']")
 	WebElement orderSuccessMsg;
-	
+
 	@FindBy(xpath = "//p[contains(text(),'Your order number is:')]/parent::div[@class='checkout-success']//strong")
 	WebElement orderNumber;
 	
+	@FindBy(xpath = "//span[contains(text(),'Thank you for your purchase!') and @data-ui-id='page-title-wrapper']")
+	WebElement orderToastMsg;
 
 	public void placeOrder() throws InterruptedException {
 		waitUntilPageLoad();
@@ -35,11 +36,12 @@ public class payment extends AbstractComponents {
 		Thread.sleep(1000); // Give some time for any animations
 		placeOrder.click();
 	}
-	
+
 	public String getOrderNumber() {
 		waitUntilVisible(orderSuccessMsg);
+		orderToastMsg.isDisplayed();
 		String orderNum = orderNumber.getText();
 		return orderNum;
 	}
-	
+
 }

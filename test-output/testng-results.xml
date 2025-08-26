@@ -1,103 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-24T21:13:18 IST" name="Default suite" finished-at="2025-08-24T21:13:22 IST" duration-ms="4069">
+  <suite started-at="2025-08-26T23:43:35 IST" name="Suite" finished-at="2025-08-26T23:43:35 IST" duration-ms="0">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:HyridFrameWork.TestRunner.testCase_PlaceOrder@609cd4d8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Smoke">
+        <method signature="placeOrder.orderPlacement(java.util.HashMap)[pri:0, instance:HybridFrameWork.Tests.placeOrder@2462cb01]" name="orderPlacement" class="HybridFrameWork.Tests.placeOrder"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-08-24T21:13:18 IST" name="Default test" finished-at="2025-08-24T21:13:22 IST" duration-ms="4069">
-      <class name="HyridFrameWork.TestRunner.testCase_PlaceOrder">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:HyridFrameWork.TestRunner.testCase_PlaceOrder@609cd4d8]" started-at="2025-08-24T21:13:18 IST" name="setUpClass" finished-at="2025-08-24T21:13:19 IST" duration-ms="443" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@18b8d173]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:HyridFrameWork.TestRunner.testCase_PlaceOrder@609cd4d8]" started-at="2025-08-24T21:13:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T21:13:22 IST" duration-ms="3564" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test of placing an order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Place order"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Log in to the site using VK@mail.com and "iQc#fRS377n8j_9"' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Log in to the site using VK@mail.com and {string}")
-public void log_in_to_the_site_using_vk_mail_com_and(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I add Atlas Fitness Tank M Blue to cart")
-public void i_add_atlas_fitness_tank_m_blue_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Navigate to checkout page and place order Fixed")
-public void navigate_to_checkout_page_and_place_order_fixed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("order placed message is displayed")
-public void order_placed_message_is_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Log in to the site using VK@mail.com and "iQc#fRS377n8j_9"' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Log in to the site using VK@mail.com and {string}")
-public void log_in_to_the_site_using_vk_mail_com_and(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I add Atlas Fitness Tank M Blue to cart")
-public void i_add_atlas_fitness_tank_m_blue_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Navigate to checkout page and place order Fixed")
-public void navigate_to_checkout_page_and_place_order_fixed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("order placed message is displayed")
-public void order_placed_message_is_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Log in to the site using VK@mail.com and "iQc#fRS377n8j_9"(file:///C:/Users/VARUN/BDD/Selenium/src/test/java/HybridFrameWork/cucumber/placeOrder.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:HyridFrameWork.TestRunner.testCase_PlaceOrder@609cd4d8]" started-at="2025-08-24T21:13:22 IST" name="tearDownClass" finished-at="2025-08-24T21:13:22 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- HyridFrameWork.TestRunner.testCase_PlaceOrder -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+  </suite> <!-- Suite -->
 </testng-results>

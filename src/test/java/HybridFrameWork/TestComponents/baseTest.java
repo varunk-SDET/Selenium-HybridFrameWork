@@ -3,6 +3,9 @@ package HybridFrameWork.TestComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.HashMap;
@@ -13,6 +16,11 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -27,7 +35,7 @@ public class baseTest {
 	WebDriver driver;
 	public HomePage objHomePage;
 
-	public WebDriver initializeDriver() throws IOException {
+	public WebDriver initializeDriver() throws IOException, URISyntaxException {
 
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(
@@ -38,8 +46,17 @@ public class baseTest {
 				: prop.getProperty("browser");
 
 		if (browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			
+			ChromeOptions options = new ChromeOptions();
+
+	        driver = new RemoteWebDriver(
+	                new URL("http://localhost:4444/wd/hub"), options);
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+		}
+		else if (browser.equalsIgnoreCase("edge")) {
+			System.setProperty("WebDriver.edge.driver", "C:\\Hybrid_Framework_Components");
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -50,7 +67,7 @@ public class baseTest {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	public HomePage launchApplication() throws IOException {
+	public HomePage launchApplication() throws IOException, URISyntaxException {
 		driver = initializeDriver();
 		objHomePage = new HomePage(driver);
 		return objHomePage;

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HyridFrameWork.TestRunner.testCase_PlaceOrder">
+      <class name="HybridFrameWork.Tests.placeOrder">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="orderPlacement" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- HyridFrameWork.TestRunner.testCase_PlaceOrder -->
+      </class> <!-- HybridFrameWork.Tests.placeOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

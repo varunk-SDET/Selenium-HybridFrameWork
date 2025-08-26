@@ -1,6 +1,7 @@
 package HybridFrameWork.StepDefinition;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 import HybridFrameWork.TestComponents.baseTest;
 import Pages.CartPage;
@@ -26,7 +27,7 @@ public class PlaceOrder_stepDefinition extends baseTest {
 	public payment objpayment;
 
 	@Given("I have landed on ecommerce site")
-	public void I_have_landed_on_ecommerce_site() throws IOException {
+	public void I_have_landed_on_ecommerce_site() throws IOException, URISyntaxException {
 
 		objHomePage = launchApplication();
 

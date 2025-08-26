@@ -32,8 +32,20 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-
-
+		<!--
+		https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+		<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-grid -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-grid</artifactId>
+			<version>4.35.0</version>
+		</dependency>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -129,7 +141,8 @@
 						<version>3.5.3</version>
 						<configuration>
 							<includes>
-								<include>/Selenium/src/test/java/HyridFrameWork/TestRunner/testCase_PlaceOrder.java</include>
+								<include>
+									/Selenium/src/test/java/HyridFrameWork/TestRunner/testCase_PlaceOrder.java</include>
 							</includes>
 						</configuration>
 					</plugin>

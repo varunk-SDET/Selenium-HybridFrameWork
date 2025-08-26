@@ -15,4 +15,16 @@
       </class> <!-- HybridFrameWork.Tests.errorScenarios -->
     </classes>
   </test> <!-- Error validation(failed) -->
+  <test thread-count="5" parallel="tests" name="Order placement(failed)">
+    <classes>
+      <class name="HybridFrameWork.Tests.placeOrder">
+        <methods>
+          <include name="orderPlacement"/>
+          <include name="tearDown"/>
+          <include name="getOrderNumber"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- HybridFrameWork.Tests.placeOrder -->
+    </classes>
+  </test> <!-- Order placement(failed) -->
 </suite> <!-- Failed suite [Suite] -->
